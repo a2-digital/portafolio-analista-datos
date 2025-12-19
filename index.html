@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Andrés Aranguren - Analista de Datos Junior especializado en SQL, Python, Power BI y Excel"
+    />
+    <meta
+      name="keywords"
+      content="Analista de Datos, Data Analyst, SQL, Python, Power BI, Business Intelligence"
+    />
+    <meta name="author" content="Andrés Aranguren" />
+    <title>Andrés Aranguren | Analista de Datos</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome para íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="assets/images/logo_without.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andrés Aranguren",
+        "jobTitle": "Analista de Datos Junior",
+        "url": "https://tusitio.com",
+        "sameAs": [
+          "https://github.com/a2-digital",
+          "https://www.linkedin.com/in/andres-aranguren-b758a3211"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="A2 Digital Logo" />
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Inicio</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hola, soy <span class="highlight">Andrés Aranguren</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Ingeniero de Sistemas enfocado en Análisis de Datos y Business
+            Intelligence. Desarrollo proyectos con SQL, Python, Power BI y Excel
+            para convertir datos en insights que apoyan la toma de decisiones.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+            <a href="CV_Andres_Aranguren.pdf" download class="btn btn-secondary"
+              >Descargar CV</a
+            >
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/a2-digital"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/andres-aranguren-b758a3211"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="email-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-img-container">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Andrés Aranguren"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-subtitle">
+          Algunos de mis proyectos de análisis de datos y desarrollo
+        </p>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1: Consumo Energético -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/projects/consumo-energetico.png"
+                alt="Análisis Consumo Energético"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/a2-digital/HouseHold_Power_Consumption/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Análisis de Consumo Energético</h3>
+              <p>
+                Análisis exploratorio de patrones de consumo energético
+                utilizando Python. Identificación de patrones de consumo
+                energético y variables de mayor impacto, con conclusiones
+                orientadas a optimización del consumo.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">pandas</span>
+                <span class="tag">matplotlib</span>
+                <span class="tag">EDA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Ventas E-commerce -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/projects/ventas-ecommerce.png"
+                alt="Análisis Ventas E-commerce"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/a2-digital/ecommerce-uk-retail-data-project"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Análisis de Ventas E-commerce</h3>
+              <p>
+                Dashboard interactivo en Power BI para análisis de 50,000+
+                transacciones. KPIs de conversión, ticket promedio y productos
+                estratégicos. El objetivo principal es comprender el
+                comportamiento del mercado, identificar patrones de compra.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Jupyter</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Web Tesis -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/projects/web-tesis.png"
+                alt="Sitio Web Tesis"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/a2-digital/MOGUS"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sitio Web para Tesis</h3>
+              <p>
+                Desarrollo de sitio web informativo para proyecto de tesis,
+                orientado al análisis de datos sobre infraestructura verde
+                urbana. Incluye procesamiento de información cuantitativa,
+                visualización de indicadores y apoyo a la toma de decisiones en
+                sostenibilidad.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4: Web Servicios -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/projects/web-servicios.png"
+                alt="Sitio Web Servicios"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/a2-digital/YogAmarte"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Ver en GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sitio Web YogAmarte</h3>
+              <p>
+                Sitio web estático desarrollado para YogAmarte, un espacio de
+                bienestar, enfocado en la prestación de servicios de yoga,
+                terapias chamánicas, angelicales y retiros holísticos
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Ingeniero de Sistemas con pasión por los datos</h3>
+            <p>
+              Soy un profesional orientado al análisis de datos con sólida
+              formación en Business Intelligence. Mi experiencia incluye
+              limpieza, transformación y visualización de datos para apoyar la
+              toma de decisiones estratégicas.
+            </p>
+            <p>
+              He trabajado con SAP Business One y desarrollado proyectos
+              personales de análisis utilizando Python, SQL y Power BI.
+              Actualmente curso un Máster en Big Data y Business Intelligence,
+              ampliando constantemente mis conocimientos en el campo de los
+              datos.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bogotá, Colombia</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Ingeniero de Sistemas</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Analista de Datos Junior</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-language"></i>
+                <span>Español (Nativo) | Inglés (B1)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h4>SQL</h4>
+                <p>Consultas complejas, JOIN, subconsultas</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h4>Python</h4>
+                <p>pandas, numpy, matplotlib, seaborn</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>Power BI</h4>
+                <p>Dashboards, DAX, Power Query</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                <h4>Excel</h4>
+                <p>Tablas dinámicas, Power Query</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <h4>Git/GitHub</h4>
+                <p>Control de versiones</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h4>SAP B1</h4>
+                <p>Consultas y reportes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline de experiencia y educación -->
+        <div class="timeline">
+          <h3>Experiencia y Educación</h3>
+
+          <!-- EXPERIENCIA -->
+          <div class="timeline-section">
+            <h4 class="timeline-subtitle">Experiencia Profesional</h4>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Jun 2022 - Presente</span>
+                  <h5>Analista de Datos - Proyectos Independientes</h5>
+                  <p>Desarrollo de proyectos con Python, SQL y Power BI</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Feb 2022 - Jun 2022</span>
+                  <h5>Consultor SAP Junior</h5>
+                  <p>Heinsohn Business Technology</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Ago 2021 - Ene 2022</span>
+                  <h5>Practicante de Soporte SAP</h5>
+                  <p>Heinsohn Business Technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCACIÓN -->
+          <div class="timeline-section">
+            <h4 class="timeline-subtitle">Educación</h4>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025 - En curso</span>
+                  <h5>Máster en Big Data y Business Intelligence</h5>
+                  <p>Escuela de Negocios Europea de Barcelona (ENEB)</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2017 - 2022</span>
+                  <h5>Ingeniero de Sistemas</h5>
+                  <p>Universidad de Bogotá Jorge Tadeo Lozano</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">
+          ¿Interesado en trabajar juntos? ¡Contáctame!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Información de Contacto</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:andresdal090@gmail.com"
+                  >andresdal090@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Teléfono</h4>
+                <a href="tel:+573059273389">+57 305 927 3389</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Bogotá, Colombia</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h4>Redes Sociales</h4>
+              <div class="social-icons">
+                <a href="https://github.com/a2-digital" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/andres-aranguren-b758a3211"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Tu Nombre" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Tu Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Asunto" />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tu Mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="A2 Digital Logo" />
+            <p>Ingeniero de Sistemas</p>
+          </div>
+          <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre Mí</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>andresdal090@gmail.com</p>
+            <p>+57 305 927 3389 - +57 3172918706</p>
+            <p>Bogotá, Colombia</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Andrés Aranguren. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón scroll to top -->
+    <button class="scroll-top" id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("_FgvQMHeWAUQQcf1Y"); // Se agrega la clave pública de EmailJS
+      })();
+    </script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
