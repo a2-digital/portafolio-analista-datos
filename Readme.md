@@ -6,7 +6,7 @@
 
 > **Portafolio profesional de Analista de Datos Junior** especializado en SQL, Python, Power BI y Excel.
 
-[🌐 Ver Portafolio en Vivo](#) <!-- Agregar el link de GitHub Pages -->
+[🌐 Ver Portafolio en Vivo](https://a2-digital.github.io/portafolio-analista-datos/)
 
 ---
 
@@ -48,15 +48,13 @@ Este portafolio web presenta mi experiencia, habilidades y proyectos como Analis
 
 ## 📁 Estructura del Proyecto
 
-```
-* **`index.html`** - Contiene la estructura principal del portafolio
-* **`docs/`** - Esta adjunto la hoja de vida en formato PDF
-* **`assets/`** - Carpeta con recursos estáticos
-  * **`images/`** - Imágenes y capturas de pantalla de proyectos
-  * **`css/`** - Archivo CSS principal
-  * **`js/`** - Archivo JavaScript principal
-* **`README.md`** - Documentación del proyecto
-```
+- **`index.html`** - Contiene la estructura principal del portafolio
+- **`docs/`** - Esta adjunto la hoja de vida en formato PDF
+- **`assets/`** - Carpeta con recursos estáticos
+  - **`images/`** - Imágenes y capturas de pantalla de proyectos
+  - **`css/`** - Archivo CSS principal
+  - **`js/`** - Archivo JavaScript principal
+- **`README.md`** - Documentación del proyecto
 
 ---
 
@@ -64,13 +62,13 @@ Este portafolio web presenta mi experiencia, habilidades y proyectos como Analis
 
 ### Opción 1: Ver Online (Recomendado)
 
-Simplemente visita: [Tu URL de GitHub Pages aquí](#)
+Simplemente visita: [Tu URL de GitHub Pages aquí](https://a2-digital.github.io/portafolio-analista-datos/)
 
 ### Opción 2: Clonar y Ejecutar Localmente
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/a2-digital/portafolio.git
+git clone https://github.com/a2-digital/portafolio-analista-datos.git
 
 # Navegar al directorio
 cd portafolio
@@ -205,9 +203,7 @@ Este proyecto está bajo la Licencia MIT. Puedes usar el código como referencia
 
 <div align="center">
 
-### ⭐ Si te gustó este portafolio, dale una estrella!
-
-**Desarrollado con ❤️ por Andrés Aranguren**
+**Desarrollado con por Andrés Aranguren**
 
 © 2025 - Todos los derechos reservados
 
