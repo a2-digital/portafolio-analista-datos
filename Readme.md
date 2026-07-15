@@ -71,7 +71,7 @@ Simplemente visita: [Tu URL de GitHub Pages aquí](https://a2-digital.github.io/
 git clone https://github.com/a2-digital/portafolio-analista-datos.git
 
 # Navegar al directorio
-cd portafolio
+cd portafolio-analista-datos
 
 # Abrir con Live Server (VS Code) o directamente abrir index.html
 ```
@@ -123,17 +123,14 @@ Para que el formulario de contacto funcione:
 Muestra de 4 proyectos principales:
 
 1. **Análisis de Consumo Energético**
-
    - Python, pandas, matplotlib
    - Análisis exploratorio de datos (EDA)
 
 2. **Análisis de Ventas E-commerce**
-
    - Python, pandas, matplotlib
    - Análisis exploratorio de datos (EDA)
 
 3. **Sitio Web para Tesis**
-
    - HTML, CSS, JavaScript, Python, MySql
    - Diseño responsive
 
