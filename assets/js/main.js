@@ -165,7 +165,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observar elementos para animaciones
 const animateElements = document.querySelectorAll(
-  ".project-card, .skill-item, .timeline-item, .about-text, .skills-container"
+  ".project-card, .skill-item, .timeline-item, .about-text, .skills-container",
 );
 
 animateElements.forEach((el) => {
@@ -181,7 +181,7 @@ document.querySelector(".email-link").addEventListener("click", (e) => {
   const userChoice = confirm(
     "¿Cómo prefieres contactarme?\n\n" +
       "Aceptar = Se abrirá Gmail en navegador\n" +
-      "Cancelar = Usará tu cliente de email predefiniodo (Outlook, etc.)"
+      "Cancelar = Usará tu cliente de email predefiniodo (Outlook, etc.)",
   );
 
   if (userChoice) {
@@ -189,7 +189,7 @@ document.querySelector(".email-link").addEventListener("click", (e) => {
     window.open(
       // https://mail.google.com/mail/?view=cm&fs=1&to=andresdal090@gmail.com&su=Contacto%20desde%20portafolio&body=Codial%20Saludo
       `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Contacto%20desde%20portafolio&body=Cordial%20Saludo`,
-      "_blank"
+      "_blank",
     );
   } else {
     // Usar mailto (Outlook/cliente predeterminado)
@@ -227,7 +227,7 @@ contactForm.addEventListener("submit", (e) => {
       console.error("❌ Error completo:", error);
       showNotification(
         `❌ Error: ${error.text || "Intenta de nuevo"}`,
-        "error"
+        "error",
       );
     })
     .finally(() => {
@@ -391,13 +391,67 @@ emailLinks.forEach((link) => {
 // ===============================
 console.log(
   "%c¡Hola! 👋",
-  "color: #A52A2A; font-size: 20px; font-weight: bold;"
+  "color: #A52A2A; font-size: 20px; font-weight: bold;",
 );
 console.log(
   "%c¿Interesado en mi código? Revisa mi GitHub: https://github.com/a2-digital",
-  "color: #cccccc; font-size: 14px;"
+  "color: #cccccc; font-size: 14px;",
 );
 
 window.addEventListener("load", () => {
   console.log("✅ Portafolio cargado correctamente");
 });
+
+// ===============================
+// Carrusel de Proyectos
+// ===============================
+const projectsCarousel = document.getElementById("projectsCarousel");
+const carouselPrev = document.getElementById("carouselPrev");
+const carouselNext = document.getElementById("carouselNext");
+const carouselDots = document.getElementById("carouselDots");
+
+if (projectsCarousel && carouselPrev && carouselNext && carouselDots) {
+  const cards = Array.from(projectsCarousel.querySelectorAll(".project-card"));
+
+  const cardStep = () => {
+    if (!cards.length) return 300;
+    const style = getComputedStyle(projectsCarousel);
+    const gap = parseInt(style.columnGap || style.gap || "24");
+    return cards[0].offsetWidth + gap;
+  };
+
+  // Genera un punto por cada card
+  cards.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.className = "carousel-dot" + (index === 0 ? " active" : "");
+    dot.setAttribute("aria-label", `Ir al proyecto ${index + 1}`);
+    dot.addEventListener("click", () => {
+      projectsCarousel.scrollTo({
+        left: index * cardStep(),
+        behavior: "smooth",
+      });
+    });
+    carouselDots.appendChild(dot);
+  });
+
+  const dots = Array.from(carouselDots.querySelectorAll(".carousel-dot"));
+
+  const updateActiveDot = () => {
+    const index = Math.round(projectsCarousel.scrollLeft / cardStep());
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+  };
+
+  let scrollTimeout;
+  projectsCarousel.addEventListener("scroll", () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(updateActiveDot, 100);
+  });
+
+  carouselPrev.addEventListener("click", () => {
+    projectsCarousel.scrollBy({ left: -cardStep(), behavior: "smooth" });
+  });
+
+  carouselNext.addEventListener("click", () => {
+    projectsCarousel.scrollBy({ left: cardStep(), behavior: "smooth" });
+  });
+}

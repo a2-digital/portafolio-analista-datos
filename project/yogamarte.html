@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YogAmarte | Andrés Aranguren</title>
+    <link rel="stylesheet" href="../assets/css/variable.css" />
+    <link rel="stylesheet" href="../assets/css/case-study.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+        </div>
+
+        <a href="../index.html#projects" class="back-link">
+          ← Volver al portafolio
+        </a>
+      </div>
+    </nav>
+
+    <header class="case-header">
+      <div class="container">
+        <span class="case-tag">Desarrollo Web · Cliente · Multiidioma</span>
+        <h1>
+          YogAmarte — Sitio web para un espacio de yoga y terapias holísticas
+        </h1>
+        <p class="case-subtitle">
+          Cliente: Paola Bergmann · HTML, CSS, JavaScript
+        </p>
+      </div>
+    </header>
+
+    <main class="container case-content">
+      <section class="case-section">
+        <h2>El cliente y el proyecto</h2>
+        <p>
+          YogAmarte es un espacio de bienestar dirigido por Paola Bergmann,
+          enfocado en clases de yoga, terapias chamánicas, angelicales y retiros
+          holísticos. El sitio se construyó para promocionar sus servicios y
+          facilitar que los visitantes agenden clases, se contacten directamente
+          y conozcan su trayectoria como instructora.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>Arquitectura</h2>
+        <p>
+          El sitio usa una estructura modular en HTML/CSS/JS puro: el navbar y
+          el footer se cargan dinámicamente desde componentes compartidos
+          (<code>load-navbar.js</code>,
+          <code>load-footer.js</code>), y los estilos comparten variables CSS
+          centralizadas (<code>variables.css</code>) para mantener consistencia
+          visual entre páginas sin duplicar código.
+        </p>
+        <p>
+          Incluye un sistema de traducción global (<code>traduccion.js</code>)
+          con archivos
+          <code>es.json</code> y <code>de.json</code>, e integración con
+          Calendly para que los clientes agenden sesiones directamente desde la
+          página de reservas.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>Lo más particular: el carrusel de testimonios</h2>
+        <ul class="findings-list">
+          <li>
+            <strong>Testimonios basados en imágenes, no en texto.</strong> Cada
+            testimonio es un recorte de imagen (formato ~340×400px), no una cita
+            escrita, mostrada dentro de un marco con forma orgánica tipo "blob"
+            que combina con la identidad visual del sitio.
+          </li>
+          <li>
+            <strong>Filtro por idioma con expansión automática.</strong> El
+            carrusel filtra los testimonios por idioma (Español/Deutsch) y se
+            expande automáticamente según cuántos testimonios existan en cada
+            uno, sin necesidad de ajustar el layout a mano.
+          </li>
+          <li>
+            <strong>Sistema data-driven.</strong> Agregar un testimonio nuevo
+            solo requiere añadir un objeto a <code>testimonios-data.js</code> —
+            no hay que tocar HTML ni CSS para sumar contenido nuevo, lo que
+            facilita que la clienta pueda pedir actualizaciones simples sin
+            depender de un desarrollador cada vez.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Páginas principales</h2>
+        <ul class="findings-list">
+          <li>
+            <strong>Inicio</strong> — presentación de servicios y banner
+            principal.
+          </li>
+          <li>
+            <strong>Sobre mí</strong> — biografía y trayectoria de la
+            instructora.
+          </li>
+          <li>
+            <strong>Contacto</strong> — formulario y medios de contacto directo.
+          </li>
+          <li>
+            <strong>Reserva</strong> — enlace a Calendly para agendar clases.
+          </li>
+          <li>
+            <strong>Testimonios</strong> — el carrusel data-driven descrito
+            arriba.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Vista del sitio</h2>
+        <img
+          src="../assets/images/projects/web-servicios.png"
+          alt="Sitio web YogAmarte"
+          class="case-image"
+        />
+        <img
+          src="../assets/images/projects/web-servicios-testimonios.png"
+          alt="Sitio web YogAmarte"
+          class="case-image"
+        />
+      </section>
+
+      <section class="case-section case-links">
+        <div class="case-actions">
+          <div class="btn-content">
+            <a
+              href="https://github.com/a2-digital"
+              target="_blank"
+              class="github-btn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 005.47 7.59c.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                  -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21
+                  1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95
+                  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                  0 0 .67-.21 2.2.82a7.59 7.59 0 014 0c1.53-1.04
+                  2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                  1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54
+                  1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+                  8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+
+              <span>Ver proyecto en GitHub</span>
+            </a>
+
+            <a href="https://yogamarte.com/" target="_blank" class="github-btn">
+              <span>Ver Pagina Web</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer">
+      <div class="container text-center">
+        <a href="../index.html#projects" class="btn-back">
+          ← Volver al portafolio
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

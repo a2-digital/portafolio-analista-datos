@@ -1,0 +1,82 @@
+:root {
+  /* Colores del logo A2 Digital */
+  --primary-red: #a52a2a;
+  --dark-red: #8b1a1a;
+  --black: #1a1a1a;
+  --dark-gray: #2c2c2c;
+  --medium-gray: #404040;
+  --light-gray: #cccccc;
+  --white: #ffffff;
+  --off-white: #f5f5f5;
+
+  /* Gradientes */
+  --gradient-red: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+  --gradient-dark: linear-gradient(135deg, var(--black), var(--dark-gray));
+
+  /* Espaciado */
+  --section-padding: 40px 0;
+  --container-width: 1200px;
+
+  /* Transiciones */
+  --transition: all 0.3s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--black);
+  color: var(--off-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  z-index: 1000;
+  transition: var(--transition);
+  border-bottom: 2px solid transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(26, 26, 26, 0.98);
+  box-shadow: 0 2px 20px rgba(165, 42, 42, 0.3);
+  border-bottom: 2px solid var(--primary-red);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 60px;
+  transition: var(--transition);
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}

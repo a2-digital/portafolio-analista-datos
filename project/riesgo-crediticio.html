@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riesgo Crediticio | Andrés Aranguren</title>
+    <link rel="stylesheet" href="../assets/css/variable.css" />
+    <link rel="stylesheet" href="../assets/css/case-study.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+        </div>
+
+        <a href="../index.html#projects" class="back-link">
+          ← Volver al portafolio
+        </a>
+      </div>
+    </nav>
+
+    <header class="case-header">
+      <div class="container">
+        <span class="case-tag"> Análisis de Datos · Power BI · MySQL </span>
+
+        <h1>
+          Riesgo Crediticio: ¿el grado que asigna el banco refleja el riesgo
+          real?
+        </h1>
+
+        <p class="case-subtitle">
+          Credit Risk Dataset (Kaggle) · 32,581 clientes
+        </p>
+      </div>
+    </header>
+
+    <main class="container case-content">
+      <section class="case-section">
+        <h2>Resumen del proyecto</h2>
+
+        <p>
+          Este proyecto analiza el comportamiento de una cartera de préstamos
+          para evaluar si el grado de riesgo asignado por la institución
+          financiera refleja realmente la probabilidad de incumplimiento.
+          Además, identifica los perfiles de clientes con mayor riesgo y detecta
+          oportunidades de mejora en la estrategia de productos.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>Herramientas utilizadas</h2>
+
+        <div class="tech-stack">
+          <span class="case-tag">Power BI</span>
+
+          <span class="case-tag">MySQL</span>
+
+          <span class="case-tag">SQL</span>
+
+          <span class="case-tag">Power Query</span>
+
+          <span class="case-tag">Modelado Relacional</span>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2>Preguntas de negocio</h2>
+
+        <ul class="findings-list">
+          <li>
+            ¿El grado de riesgo (loan_grade) representa correctamente el riesgo
+            real observado?
+          </li>
+
+          <li>
+            ¿Qué perfiles de clientes presentan la mayor probabilidad de
+            incumplimiento?
+          </li>
+
+          <li>
+            ¿Qué productos financieros representan una oportunidad de
+            crecimiento con un riesgo controlado?
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Metodología técnica</h2>
+
+        <details>
+          <summary>Ver metodología utilizada</summary>
+
+          <br />
+
+          <p>
+            Se construyó un modelo relacional en MySQL compuesto por dos tablas
+            (Cliente y Ubicación), normalizando únicamente la información
+            geográfica tras validar que cada cliente poseía un único préstamo
+            asociado.
+          </p>
+
+          <p>
+            El proceso ETL incluyó una tabla staging, auditorías mediante LEFT
+            JOIN y validaciones de integridad referencial antes de la carga
+            definitiva.
+          </p>
+        </details>
+      </section>
+
+      <section class="case-section">
+        <h2>Dashboard 1 · Perfil de Riesgo</h2>
+
+        <img
+          class="case-image"
+          src="../assets/images/projects/riesgo-dashboard.png"
+          alt="Dashboard Perfil Riesgo"
+        />
+
+        <h3>Principales hallazgos</h3>
+
+        <ul class="findings-list">
+          <li>
+            <strong>Loan Grade correctamente calibrado.</strong>
+
+            La tasa de default aumenta de forma progresiva desde A hasta G,
+            mostrando que el modelo de clasificación utilizado por el banco
+            representa adecuadamente el riesgo.
+          </li>
+
+          <li>
+            <strong>Los ingresos son el principal factor de riesgo.</strong>
+
+            Los clientes con ingresos inferiores a 40k presentan tasas de
+            incumplimiento muy superiores al resto de segmentos.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Dashboard 2 · Oportunidades de Producto</h2>
+
+        <img
+          class="case-image"
+          src="../assets/images/projects/riesgo-dashboard2.png"
+          alt="Dashboard Productos"
+        />
+
+        <h3>Principales hallazgos</h3>
+
+        <ul class="findings-list">
+          <li>
+            <strong>Educación concentra el mayor volumen de créditos.</strong>
+
+            Es el producto con mayor capital financiado dentro del portafolio.
+          </li>
+
+          <li>
+            <strong
+              >Consolidación de deuda y Salud presentan una oportunidad de
+              mejora.</strong
+            >
+
+            Registran una de las mayores tasas de default mientras mantienen
+            tasas de interés relativamente bajas.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Conclusiones</h2>
+
+        <ul class="findings-list">
+          <li>
+            El modelo de clasificación de riesgo utilizado por la institución se
+            encuentra correctamente calibrado.
+          </li>
+
+          <li>
+            El ingreso del cliente tiene mayor impacto sobre el riesgo que el
+            tipo de empleo.
+          </li>
+
+          <li>
+            Existen oportunidades para ajustar precios y políticas de crédito en
+            algunos productos específicos.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-section case-links">
+        <div class="case-actions">
+          <a
+            href="https://github.com/a2-digital"
+            target="_blank"
+            class="github-btn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 005.47 7.59c.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                  -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21
+                  1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95
+                  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                  0 0 .67-.21 2.2.82a7.59 7.59 0 014 0c1.53-1.04
+                  2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                  1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54
+                  1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+                  8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+
+            <span>Ver proyecto en GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer">
+      <div class="container text-center">
+        <a href="../index.html#projects" class="btn-back">
+          ← Volver al portafolio
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

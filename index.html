@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -13,13 +13,15 @@
     />
     <meta name="author" content="Andrés Aranguren" />
     <title>Andrés Aranguren | Analista de Datos</title>
+    <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- Font Awesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="shortcut icon" href="assets/images/logo_without.png" />
+    <link rel="shortcut icon" href="favicon.png" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -74,7 +76,10 @@
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-            <a href="docs/CV_AndresAranguren.pdf" download class="btn btn-secondary"
+            <a
+              href="docs/CV_AndresAranguren.pdf"
+              download
+              class="btn btn-secondary"
               >Descargar CV</a
             >
           </div>
@@ -93,19 +98,14 @@
             >
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:andresdal090@gmail.com" class="email-link" aria-label="Email">
+            <a
+              href="mailto:andresdal090@gmail.com"
+              class="email-link"
+              aria-label="Email"
+            >
               <i class="fas fa-envelope"></i>
             </a>
           </div>
-        </div>
-        <!-- <div class="hero-image">
-          <div class="profile-img-container">
-            <img
-              src="assets/images/profile.jpg"
-              alt="Andrés Aranguren"
-              class="profile-img"
-            />
-          </div>-->
         </div>
       </div>
       <div class="scroll-indicator">
@@ -132,22 +132,16 @@
                 alt="Análisis Consumo Energético"
               />
               <div class="project-overlay">
-                <a
-                  href="https://github.com/a2-digital/HouseHold_Power_Consumption/"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fab fa-github"></i> Ver en GitHub
+                <a href="project/consumo-energetico.html" class="project-link">
+                  <i class="fas fa-arrow-right"></i> Ver más
                 </a>
               </div>
             </div>
             <div class="project-content">
               <h3>Análisis de Consumo Energético</h3>
               <p>
-                Análisis exploratorio de patrones de consumo energético
-                utilizando Python. Identificación de patrones de consumo
-                energético y variables de mayor impacto, con conclusiones
-                orientadas a optimización del consumo.
+                Análisis exploratorio en Python para identificar los patrones y
+                variables de mayor impacto en el consumo eléctrico del hogar.
               </p>
               <div class="project-tags">
                 <span class="tag">Python</span>
@@ -166,22 +160,16 @@
                 alt="Análisis Ventas E-commerce"
               />
               <div class="project-overlay">
-                <a
-                  href="https://github.com/a2-digital/ecommerce-uk-retail-data-project"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fab fa-github"></i> Ver en GitHub
+                <a href="project/ventas-ecommerce.html" class="project-link">
+                  <i class="fas fa-arrow-right"></i> Ver más
                 </a>
               </div>
             </div>
             <div class="project-content">
               <h3>Análisis de Ventas E-commerce</h3>
               <p>
-                Dashboard interactivo en Power BI para análisis de 50,000+
-                transacciones. KPIs de conversión, ticket promedio y productos
-                estratégicos. El objetivo principal es comprender el
-                comportamiento del mercado, identificar patrones de compra.
+                Análisis de más de 50,000 transacciones para identificar KPIs de
+                conversión, ticket promedio y patrones de compra.
               </p>
               <div class="project-tags">
                 <span class="tag">Jupyter</span>
@@ -194,27 +182,20 @@
           <div class="project-card">
             <div class="project-image">
               <img
-                src="assets/images/projects/web-tesis.png"
-                alt="Sitio Web Tesis"
+                src="assets/images/projects/web-mogus.png"
+                alt="Sitio Web MOGUS"
               />
               <div class="project-overlay">
-                <a
-                  href="https://github.com/a2-digital/MOGUS"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fab fa-github"></i> Ver en GitHub
+                <a href="project/mogus.html" class="project-link">
+                  <i class="fas fa-arrow-right"></i> Ver más
                 </a>
               </div>
             </div>
             <div class="project-content">
-              <h3>Sitio Web para Tesis</h3>
+              <h3>Sitio Web para MOGUS</h3>
               <p>
-                Desarrollo de sitio web informativo para proyecto de tesis,
-                orientado al análisis de datos sobre infraestructura verde
-                urbana. Incluye procesamiento de información cuantitativa,
-                visualización de indicadores y apoyo a la toma de decisiones en
-                sostenibilidad.
+                Sitio informativo para tesis sobre infraestructura verde urbana,
+                con visualización de indicadores de sostenibilidad.
               </p>
               <div class="project-tags">
                 <span class="tag">HTML</span>
@@ -234,26 +215,49 @@
                 alt="Sitio Web Servicios"
               />
               <div class="project-overlay">
-                <a
-                  href="https://github.com/a2-digital/YogAmarte"
-                  target="_blank"
-                  class="project-link"
-                >
-                  <i class="fab fa-github"></i> Ver en GitHub
+                <a href="project/yogamarte.html" class="project-link">
+                  <i class="fas fa-arrow-right"></i> Ver más
                 </a>
               </div>
             </div>
             <div class="project-content">
               <h3>Sitio Web YogAmarte</h3>
               <p>
-                Sitio web estático desarrollado para YogAmarte, un espacio de
-                bienestar, enfocado en la prestación de servicios de yoga,
-                terapias chamánicas, angelicales y retiros holísticos
+                Sitio web estático para un espacio de bienestar, con servicios
+                de yoga, terapias holísticas y retiros.
               </p>
               <div class="project-tags">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
                 <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 5: Riesgo Crediticio -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/projects/riesgo-dashboard.png"
+                alt="Análisis de Riesgo Crediticio"
+              />
+              <div class="project-overlay">
+                <a href="project/riesgo-crediticio.html" class="project-link">
+                  <i class="fas fa-arrow-right"></i> Ver más
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Análisis de Riesgo Crediticio</h3>
+              <p>
+                Modelo en MySQL y dashboard en Power BI para evaluar si el
+                riesgo asignado por el banco refleja el comportamiento real.
+              </p>
+              <div class="project-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">Modelado de Datos</span>
               </div>
             </div>
           </div>
@@ -372,6 +376,36 @@
                 </div>
               </div>
             </div>
+
+            <details class="timeline-details">
+              <summary>
+                Ver logros destacados en Heinsohn Business Technology
+              </summary>
+
+              <br />
+
+              <ul class="findings-list">
+                <li>
+                  Creación de documentación técnica para entornos SAP SQL Server
+                  y SAP HANA, estandarizando procesos complejos y facilitando su
+                  replicación.
+                </li>
+                <li>
+                  Solución de problemas de integración entre SAP HANA, Linux y
+                  Power BI, mejorando la disponibilidad de información en los
+                  tableros de control.
+                </li>
+                <li>
+                  Resolución de incidencias técnicas en SAP Business One,
+                  Windows y Power BI, garantizando la continuidad operativa de
+                  procesos críticos.
+                </li>
+                <li>
+                  Reducción de los tiempos de atención de incidencias mediante
+                  la elaboración de guías y manuales de configuración y soporte.
+                </li>
+              </ul>
+            </details>
           </div>
 
           <!-- EDUCACIÓN -->
@@ -395,6 +429,30 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- CERTIFICACIONES -->
+          <div class="timeline-section">
+            <h4 class="timeline-subtitle">Certificaciones y Cursos</h4>
+            <details class="timeline-details">
+              <summary>Ver certificaciones y cursos</summary>
+
+              <br />
+
+              <ul class="findings-list">
+                <li>Google Data Analytics — 2024</li>
+                <li>Análisis de Datos, 105 h — Avanza Tech, 2025</li>
+                <li>
+                  Diseño y Gestión de Bases de Datos, 48 h — Universidad de los
+                  Andes, 2024
+                </li>
+                <li>MySQL y Python — A2 Capacitaciones, 2022</li>
+                <li>
+                  Oracle Next Education — Alura LATAM, 2023 (Java, Business
+                  Agility, Programación)
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
       </div>
